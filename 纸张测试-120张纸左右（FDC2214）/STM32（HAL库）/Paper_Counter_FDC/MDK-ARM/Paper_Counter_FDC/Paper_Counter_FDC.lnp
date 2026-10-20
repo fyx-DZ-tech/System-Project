@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"paper_counter_fdc\startup_stm32f103xb.o"
+"paper_counter_fdc\fdc2214.o"
+"paper_counter_fdc\oled.o"
+"paper_counter_fdc\main.o"
+"paper_counter_fdc\gpio.o"
+"paper_counter_fdc\usart.o"
+"paper_counter_fdc\stm32f1xx_it.o"
+"paper_counter_fdc\stm32f1xx_hal_msp.o"
+"paper_counter_fdc\stm32f1xx_hal_gpio_ex.o"
+"paper_counter_fdc\stm32f1xx_hal_tim.o"
+"paper_counter_fdc\stm32f1xx_hal_tim_ex.o"
+"paper_counter_fdc\stm32f1xx_hal_uart.o"
+"paper_counter_fdc\stm32f1xx_hal.o"
+"paper_counter_fdc\stm32f1xx_hal_rcc.o"
+"paper_counter_fdc\stm32f1xx_hal_rcc_ex.o"
+"paper_counter_fdc\stm32f1xx_hal_gpio.o"
+"paper_counter_fdc\stm32f1xx_hal_dma.o"
+"paper_counter_fdc\stm32f1xx_hal_cortex.o"
+"paper_counter_fdc\stm32f1xx_hal_pwr.o"
+"paper_counter_fdc\stm32f1xx_hal_flash.o"
+"paper_counter_fdc\stm32f1xx_hal_flash_ex.o"
+"paper_counter_fdc\stm32f1xx_hal_exti.o"
+"paper_counter_fdc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Paper_Counter_FDC\Paper_Counter_FDC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Paper_Counter_FDC.map" -o Paper_Counter_FDC\Paper_Counter_FDC.axf
